@@ -38,8 +38,8 @@
  */
 
 function coinFlips(flips) {
-  const results = new Array(flips);
-  for(var i = 0; i < flips; i++) {
+  const results = [];
+  for(let i = 0; i < flips; i++) {
     results[i] = coinFlip();
   }
   return results;
