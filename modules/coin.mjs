@@ -59,15 +59,16 @@ function coinFlips(flips) {
  */
 
 function countFlips(array) {
-  var count = {tails: 0, heads: 0};
+  let headCount = 0;
+  let tailCount = 0;
   for (var i = 0; i < array.length; i++) {
-    if(array[i] == "heads") {
-      count.heads++;
-    } else if (array[i] == "tails") {
-      count.tails++;
+    if(array[i].localeCompare('heads')) {
+      headCount++;
+    } else {
+      tailCount++;
     } // we can assume only heads or tails as we are providing the array ourselves
   }
-  return count;
+  return (tails:tailCount,heads:headCount);
 }
 
 /** Flip a coin!
