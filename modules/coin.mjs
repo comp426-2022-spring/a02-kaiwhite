@@ -63,12 +63,12 @@ function countFlips(array) {
   let tailCount = 0;
   for (var i = 0; i < array.length; i++) {
     if(array[i].localeCompare('heads')) {
-      headCount++;
+      hNum++;
     } else {
       tailCount++;
     } // we can assume only heads or tails as we are providing the array ourselves
   }
-  return {heads: headCount,tails: tailCount};
+  return {heads: hNum,tails: tailCount};
 }
 
 /** Flip a coin!

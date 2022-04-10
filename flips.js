@@ -1,16 +1,23 @@
 import {coinFlips, countFlips} from './modules/coin.mjs';
 
 var args = process.argv.slice(2);
-let coinFlip = coinFlips(args[2]);
-let countFlip = countFlips(coinFlip);
+var args1 = coinFlips(args[2]);
 
-if (args[2] == null){
-    coinFlip = coinFlips(1);
-    if (coinFlip == 'tails'){
-        countFlip = {tails:1};
-    } else {
-        countFlip = {heads:1};
+if (process.argv.length < 3){
+    console.log(coinFlip());
+} else {
+    var myargs1 = process.argv.slice(2);
+    var myArgs = myargs1[0].charAt(9);
+    console.log(myArgs);
+
+    var x = 10;
+    while (x < myargs1[0].length){
+        myArgs = myArgs + myargs1[0].charAt(x);
+        x++;
     }
+    var num = parseInt(myArgs);
+    var coins = coinFlips(num);
+    console.log(coins);
+    var num = countFlips(coins);
+    console.log(num);
 }
-console.info(coinFlip);
-console.log(countFlip);
