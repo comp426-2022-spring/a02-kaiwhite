@@ -13,10 +13,12 @@ if (process.argv.length < 3){
         myArgs = myArgs + myargs1[0].charAt(x);
         x++;
     }
-    if (myArgs != 'heads' || myArgs != 'tails'){
+    if (myArgs == 'heads'){
+        console.log(flipACoin(myArgs));
+    }else if (myArgs == 'tails') {
+        console.log(flipACoin(myArgs));
+    } else {
         console.log("Error: no input");
         console.log("Usage: node guess-flip --call=[heads|tails]");
-    }else {
-        console.log(flipACoin(myArgs));
     }
 }
