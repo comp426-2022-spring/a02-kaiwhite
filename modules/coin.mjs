@@ -42,6 +42,9 @@ function coinFlips(flips) {
   for(let i = 0; i < flips; i++) {
     results[i] = coinFlip();
   }
+  if (flips < 1){
+    results[0] = coinFlip();
+  }
   return results;
 }
 
