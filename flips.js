@@ -1,8 +1,5 @@
 import {coinFlips, countFlips} from './modules/coin.mjs';
 
-var args = process.argv.slice(2);
-var args1 = coinFlips(args[2]);
-
 if (process.argv.length < 3){
     console.log(coinFlip());
 } else {
