@@ -1,4 +1,4 @@
-import {coinFlips, countFlips} from './modules/coin.mjs';
+import {coinFlip, countFlips, coinFlips} from './modules/coin.mjs';
 
 if (process.argv.length < 3){
     console.log(coinFlip());
