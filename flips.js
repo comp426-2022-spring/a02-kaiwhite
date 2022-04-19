@@ -1,6 +1,15 @@
 import {coinFlip, countFlips, coinFlips} from './modules/coin.mjs';
+import {createRequire} from 'module';
 
-if (process.argv.length < 3){
+const require = createRequire(import.meta.url);
+const args = require('minimist')(process.argv.slice(2))
+const number = args.number || 1
+
+const result = coinFlips(args.number);
+console.log(result);
+console.log(countFlips(results));
+
+/*if (process.argv.length < 3){
     console.log(coinFlip());
 } else {
     var myargs1 = process.argv.slice(2);
@@ -17,4 +26,4 @@ if (process.argv.length < 3){
     console.log(coins);
     var num = countFlips(coins);
     console.log(num);
-}
+}*/
