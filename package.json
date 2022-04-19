@@ -12,6 +12,9 @@
   "author": "Kai White",
   "license": "GPL-3.0-or-later",
   "type": "module",
+  "dependencies": {
+    "minimist": "^1.2.6"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/comp426-2022-spring/a02-kaiwhite.git"
