@@ -6,10 +6,18 @@
   "scripts": {
     "flip": "node flip.js",
     "flips": "node flips.js",
-    "guess-flip": "node guess-flip.js", 
+    "guess-flip": "node guess-flip.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Kai White",
   "license": "GPL-3.0-or-later",
-  "type": "module"
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/comp426-2022-spring/a02-kaiwhite.git"
+  },
+  "bugs": {
+    "url": "https://github.com/comp426-2022-spring/a02-kaiwhite/issues"
+  },
+  "homepage": "https://github.com/comp426-2022-spring/a02-kaiwhite#readme"
 }
