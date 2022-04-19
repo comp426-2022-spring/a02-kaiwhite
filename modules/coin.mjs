@@ -39,11 +39,11 @@
 
 function coinFlips(flips) {
   const results = [];
+  if (flips < 1 || typeof flips ==="undefined"){
+    flips = 1;
+  }
   for(let i = 0; i < flips; i++) {
     results[i] = coinFlip();
-  }
-  if (flips < 1 || flips == null){
-    results[0] = coinFlip();
   }
   return results;
 }
