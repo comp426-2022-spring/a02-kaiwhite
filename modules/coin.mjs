@@ -38,12 +38,12 @@
  */
 
 function coinFlips(flips) {
-  const results = [];
   if (flips < 1 || typeof flips ==="undefined"){
     flips = 1;
   }
-  for(let i = 0; i < flips; i++) {
-    results[i] = coinFlip();
+  const results = [];
+  for(var i = 0; i < flips; i++) {
+    results.push(coinFlip());
   }
   return results;
 }
